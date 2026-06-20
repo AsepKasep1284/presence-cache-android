@@ -3,5 +3,5 @@ plugins {
 }
 
 group = "com.github.AsepKasep1284"
-version = System.getenv("VERSION") ?: "1.0.0"
+version = System.getenv("VERSION") ?: "1.1.0"
 

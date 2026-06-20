@@ -34,6 +34,15 @@ public final class PresenceCache {
         return preferences.getString(memberId, null);
     }
 
+    public boolean contains(String memberId) {
+        requireValue(memberId, "memberId");
+        return preferences.contains(memberId);
+    }
+
+    public int size() {
+        return preferences.getAll().size();
+    }
+
     public void remove(String memberId) {
         requireValue(memberId, "memberId");
         preferences.edit().remove(memberId).apply();
